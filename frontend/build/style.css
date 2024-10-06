@@ -1,0 +1,221 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background: #222;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color */
+    border-bottom: 2px solid #ffcc00; /* Underline on hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    position: relative;
+    background: url('/home/ashirbad/Vedavault/frontend/src/components/background_img.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.countdown-item {
+    background: rgba(255, 204, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.countdown-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.btn {
+    background: #ffcc00;
+    color: #111;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #e6b800; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* Main Facts Section */
+.main-facts {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #222;
+}
+
+.main-facts h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-facts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.fact-item {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s; /* Smooth scaling */
+    margin: 10px; /* Added margin for spacing */
+}
+
+.fact-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.fact-item h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.fact-item p {
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #ffcc00;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #e6b800; /* Darker shade on hover */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .facts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fact-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>VedaVault - Your Trusted Resource</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
+   <link rel="stylesheet" href="/home/ashirbad/Vedavault/frontend/public/style.css"> <!-- Link to your custom CSS -->
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container">
+           <a class="navbar-brand" href="#">VedaVault</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                   <li class="nav-item">
+                       <a class="nav-link" href="#about">About Us</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#services">Services</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#team">Our Team</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#resources">Resources</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#contact">Contact Us</a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </nav>
+
+
+   <!-- Hero Section -->
+   <header class="hero bg-primary text-white text-center py-5">
+       <div class="container">
+           <h1 class="display-4">Welcome to VedaVault</h1>
+           <p class="lead">Your trusted resource for knowledge and information</p>
+           <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+       </div>
+   </header>
+
+
+   <!-- About Us Section -->
+   <section id="about" class="py-5">
+       <div class="container">
+           <h2 class="text-center">About Us</h2>
+           <p class="text-center">We are committed to providing high-quality resources and information to help you achieve your goals.</p>
+           <h3 class="text-center">Mission Statement</h3>
+           <p class="text-center">To empower individuals through knowledge and resources.</p>
+           <h3 class="text-center">Vision</h3>
+           <p class="text-center">To be the leading provider of accessible information.</p>
+           <h3 class="text-center">Core Values</h3>
+           <ul class="list-inline text-center">
+               <li class="list-inline-item">Integrity</li>
+               <li class="list-inline-item">Innovation</li>
+               <li class="list-inline-item">Community</li>
+           </ul>
+       </div>
+   </section>
+
+
+   <!-- Our Team Section -->
+   <section id="team" class="bg-light py-5">
+       <div class="container">
+           <h2 class="text-center">Our Team</h2>
+           <p class="text-center">Meet the dedicated individuals behind VedaVault.</p>
+           <div class="row">
+               <div class="col-md-4 text-center">
+                   <img src="static/images/member1.jpg" alt="Team Member" class="rounded-circle" width="150">
+                   <h4>John Doe</h4>
+                   <p>Founder & CEO</p>
+               </div>
+               <div class="col-md-4 text-center">
+                   <img src="static/images/member2.jpg" alt="Team Member" class="rounded-circle" width="150">
+                   <h4>Jane Smith</h4>
+                   <p>Lead Developer</p>
+               </div>
+               <div class="col-md-4 text-center">
+                   <img src="static/images/member3.jpg" alt="Team Member" class="rounded-circle" width="150">
+                   <h4>Emily Johnson</h4>
+                   <p>Marketing Director</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Resources Section -->
+   <section id="resources" class="py-5">
+       <div class="container">
+           <h2 class="text-center">Resources</h2>
+           <p class="text-center">Explore our extensive collection of resources.</p>
+           <ul class="list-unstyled text-center">
+               <li><a href="#">YouTube Videos</a></li>
+               <li><a href="#">Blogs</a></li>
+               <li><a href="#">Newsletters</a></li>
+               <li><a href="#">Follow us on:</a></li>
+               <li>
+                   <a href="#">Twitter</a> |
+                   <a href="#">YouTube</a> |
+                   <a href="#">Instagram</a> |
+                   <a href="#">LinkedIn</a>
+               </li>
+           </ul>
+       </div>
+   </section>
+
+
+   <!-- Services Section -->
+   <section id="services" class="bg-light py-5">
+       <div class="container">
+           <h2 class="text-center">Our Services</h2>
+           <p class="text-center">We offer a variety of strategies to help you succeed.</p>
+           <ul class="list-unstyled text-center">
+               <li>Strategy Consulting</li>
+               <li>Training Workshops</li>
+               <li>Online Resources</li>
+           </ul>
+           <h3 class="text-center">Pricing Plans</h3>
+           <p class="text-center">Contact us for a customized quote.</p>
+       </div>
+   </section>
+
+
+   <!-- Contact Us Section -->
+   <section id="contact" class="py-5">
+       <div class="container">
+           <h2 class="text-center">Contact Us</h2>
+           <p class="text-center">We'd love to hear from you! Please fill out the form below:</p>
+           <form action="your_google_form_url" method="POST">
+               <div class="form-group">
+                   <label for="name">Name</label>
+                   <input type="text" class="form-control" id="name" name="name" required>
+               </div>
+               <div class="form-group">
+                   <label for="email">Email</label>
+                   <input type="email" class="form-control" id="email" name="email" required>
+               </div>
+               <div class="form-group">
+                   <label for="message">Message</label>
+                   <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary">Submit</button>
+           </form>
+       </div>
+   </section>
+
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-4">
+       <p>&copy; 2024 VedaVault. All rights reserved.</p>
+   </footer>
+
+
+   <!-- JS Scripts -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
